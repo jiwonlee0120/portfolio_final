@@ -4,7 +4,9 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+AOS.init();
 (function() {
+
   "use strict";
 
   /**
@@ -105,10 +107,6 @@
     });
   }
 
-
-  
-
-
   /**
    * Preloader
    */
@@ -208,7 +206,5 @@ window.addEventListener('wheel', () => {
   }
   selectNavItem(navItems[selectedNavIndex]);
 });
-
-
 
 })()

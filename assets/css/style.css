@@ -56,7 +56,6 @@
   vertical-align: middle;
 }
 
-
 /*--------------------------------------------------------------
 # Home Section
 --------------------------------------------------------------*/
@@ -91,8 +90,6 @@
 .home-subtitle {
   font-size: 3rem;
 }
-
-
 
 /* ------------------------------ */
 
@@ -209,12 +206,12 @@ p {
 /* About */
 
 #about {
-  background-color: #E9ECEF;
+  background-color: #e9ecef;
 }
 
 .about__wrapper {
   margin-top: 3rem;
-  background-color: #F8F9FA;
+  background-color: #f8f9fa;
   display: flex;
   height: 40vh;
   align-items: center;
@@ -311,17 +308,15 @@ p {
   font-size: var(--font-small);
 }
 
-
-
 /* Skill */
 
 #skills {
-  background-color: #CED4DA;
+  background-color: #ced4da;
 }
 
 .skillset {
   display: flex;
-  background-color: #6C757D;
+  background-color: #6c757d;
   color: var(--color-light-white);
   margin: 20px 0;
 }
@@ -331,7 +326,7 @@ p {
 }
 .skillset__left {
   flex-basis: 60%;
-  background-color: #343A40;
+  background-color: #343a40;
   padding: 20px 40px;
 }
 
@@ -352,6 +347,7 @@ p {
 .skill__value {
   height: 3px;
   background-color: white;
+  animation: animation-name 2.5s 1;
 }
 
 .skillset__right {
@@ -366,6 +362,30 @@ p {
 .etc {
   padding: 20px;
   height: 50%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+}
+
+.etc svg,
+.tools svg {
+  width: 50px;
+  fill: white;
+}
+
+.etc__list,
+.tools__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.etc__list li,
+.tools__list li {
+  display: flex;
+  flex-direction: column-reverse;
+  row-gap: 12px;
+  align-items: center;
+  width: 30px;
 }
 
 /* Work */
@@ -392,7 +412,7 @@ p {
   width: 400px;
   height: 300px;
   margin: 2px;
-  background-color: #E9ECEF;
+  background-color: #e9ecef;
 }
 
 .project.invisible {
@@ -441,7 +461,6 @@ p {
   background-color: var(--color-dark-white);
 }
 
-
 /* Contact */
 #contact {
   background-color: #212529;
@@ -452,8 +471,10 @@ p {
   padding-top: 4rem;
 }
 
-#contact p, #contact h2, .contact__title {
-  color: #F8F9FA;
+#contact p,
+#contact h2,
+.contact__title {
+  color: #f8f9fa;
 }
 
 #contact form {
@@ -462,44 +483,43 @@ p {
   row-gap: 3vh;
   width: 40%;
 }
-#contact form input{
+#contact form input {
   border-bottom: 0.5px solid black;
   font-size: 16px;
   height: 5vh;
   width: 100%;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #F8F9FA;
-  color: #F8F9FA;
+  border-bottom: 1px solid #f8f9fa;
+  color: #f8f9fa;
 }
 
 #contact form textarea {
   height: 20vh;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #F8F9FA;
+  border-bottom: 1px solid #f8f9fa;
   resize: none;
-  color: #F8F9FA;
+  color: #f8f9fa;
 }
 
-input::placeholder, textarea::placeholder {
-  color: #F8F9FA;
+input::placeholder,
+textarea::placeholder {
+  color: #f8f9fa;
   font-size: 16px;
 }
 
-[value=SEND] {
-  border: 1px solid #F8F9FA !important; 
-  color: #F8F9FA;
+[value="SEND"] {
+  border: 1px solid #f8f9fa !important;
+  color: #f8f9fa;
   cursor: pointer;
   transition: 0.3s;
 }
 
-
-[value=SEND]:hover {
+[value="SEND"]:hover {
   color: black;
-  background-color: #F8F9FA !important;
+  background-color: #f8f9fa !important;
   opacity: 1;
-  
 }
 
 .contact__divider {
@@ -528,7 +548,7 @@ input::placeholder, textarea::placeholder {
   color: white;
 }
 
-.resume > ul{
+.resume > ul {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
@@ -540,7 +560,7 @@ input::placeholder, textarea::placeholder {
   column-gap: 2rem;
 }
 
-.resume >ul > li > a {
+.resume > ul > li > a {
   font-size: 20px;
 }
 
@@ -553,8 +573,6 @@ input::placeholder, textarea::placeholder {
 .icon a {
   font-size: 50px;
 }
-
-
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
@@ -603,8 +621,6 @@ input::placeholder, textarea::placeholder {
     padding: 0rem;
   }
 
-
-
   .home .home-title {
     font-size: 4.5rem;
   }
@@ -617,9 +633,8 @@ input::placeholder, textarea::placeholder {
     flex-direction: column;
     width: fit-content;
     height: fit-content;
-  
   }
-  
+
   .left {
     border: none;
     border-bottom: 1px solid black;
@@ -634,7 +649,6 @@ input::placeholder, textarea::placeholder {
     flex-direction: column;
     margin-bottom: 0px;
     align-items: center;
-    
   }
 
   .major {
@@ -651,18 +665,16 @@ input::placeholder, textarea::placeholder {
 
   .project {
     flex-grow: 1;
-
   }
 
   #contact {
     padding: 0;
   }
-  
+
   .contact__divider {
     padding: 0;
     column-gap: 4rem;
   }
-
 }
 
 /* For below 480 screen width */
@@ -676,7 +688,6 @@ input::placeholder, textarea::placeholder {
     flex-direction: column-reverse;
     align-items: center;
     row-gap: 3rem;
-
   }
 
   .resume {
@@ -686,6 +697,13 @@ input::placeholder, textarea::placeholder {
   #contact form {
     width: 80%;
   }
-  
+}
 
+@keyframes animation-name {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
