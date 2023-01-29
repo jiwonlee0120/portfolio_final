@@ -397,11 +397,16 @@ p {
   justify-content: space-between;
   opacity: 1;
   transition: all var(--animation-duration) ease-out;
+  row-gap: 2rem;
 }
 
 .work__projects.anim-out {
   opacity: 0;
   transform: scale(0.96) translateY(40px);
+}
+
+#hidden{
+  visibility: hidden;
 }
 
 .project {
@@ -531,7 +536,6 @@ textarea::placeholder {
 }
 
 .resume {
-  width: 40%;
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
@@ -564,15 +568,34 @@ textarea::placeholder {
   font-size: 20px;
 }
 
+.icon {
+  padding-top: 3rem;
+  display: flex;
+}
+
 .icon ul {
   display: flex;
   column-gap: 3rem;
-  align-items: center;
+  justify-content: center;
+ 
+}
+
+.icon li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .icon a {
   font-size: 50px;
+  transition: .3s;
 }
+.icon a:hover {
+  font-size: 56px;
+}
+
+
+
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
@@ -594,7 +617,7 @@ textarea::placeholder {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
   }
 
   #navbar.navbar--dark {
@@ -604,6 +627,7 @@ textarea::placeholder {
     flex-direction: column;
     text-align: center;
     width: 100%;
+    padding: 1.5rem;
     display: none;
   }
 
@@ -611,6 +635,10 @@ textarea::placeholder {
     display: block;
   }
 
+  .navbar__menu__item {
+    height: 36px;
+  }
+  
   .section {
     padding: 16px;
     padding-top: 40px;
@@ -659,6 +687,18 @@ textarea::placeholder {
     flex-direction: column;
   }
 
+  #skills > h2 {
+    font-size: 22px;
+  }
+
+  #skills > p {
+    font-size: 18px;
+  }
+
+  #work {
+    padding-bottom: 6rem;
+  }
+
   .work__projects {
     row-gap: 2rem;
   }
@@ -667,43 +707,60 @@ textarea::placeholder {
     flex-grow: 1;
   }
 
+  #hidden {
+    display: none;
+  }
+
   #contact {
-    padding: 0;
+    padding: 2rem;
+  }
+
+  #contact h2 {
+    font-size: 22px;
+  }
+
+  #contact p {
+    font-size: 18px;
   }
 
   .contact__divider {
-    padding: 0;
+    padding: 4rem 0;
     column-gap: 4rem;
   }
 }
 
-/* For below 480 screen width */
+/* For below 500 screen width */
 @media screen and (max-width: 500px) {
   .left {
     flex-direction: column;
   }
 
+  .left img {
+    margin-bottom: 1.5rem;
+  }
+
+  #contact p {
+    width: 80%;
+  }
+
+
   .contact__divider {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     row-gap: 3rem;
   }
 
   .resume {
-    width: 80%;
+    display: flex;
+    justify-content: center;
   }
+
+
 
   #contact form {
-    width: 80%;
-  }
-}
-
-@keyframes animation-name {
-  from {
-    width: 0;
-  }
-  to {
     width: 100%;
   }
 }
+
+
