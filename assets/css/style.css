@@ -740,8 +740,12 @@ textarea::placeholder {
     margin-bottom: 1.5rem;
   }
 
+  #contact {
+    display: flex;
+    justify-content: center;
+  }
   #contact p {
-    width: 90%;
+    text-align: center;
   }
 
 
