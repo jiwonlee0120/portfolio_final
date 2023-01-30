@@ -645,16 +645,16 @@ textarea::placeholder {
   }
 
   .section__container {
-    width: fit-content;
+    width: 100%;
     padding: 0rem;
   }
 
   .home .home-title {
-    font-size: 4.5rem;
+    font-size: 3rem;
   }
 
   .home .home-subtitle {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .about__wrapper {
@@ -729,8 +729,9 @@ textarea::placeholder {
   }
 }
 
-/* For below 500 screen width */
+/* For below 480 screen width */
 @media screen and (max-width: 500px) {
+
   .left {
     flex-direction: column;
   }
@@ -740,7 +741,7 @@ textarea::placeholder {
   }
 
   #contact p {
-    width: 80%;
+    width: 90%;
   }
 
 
@@ -755,8 +756,6 @@ textarea::placeholder {
     display: flex;
     justify-content: center;
   }
-
-
 
   #contact form {
     width: 100%;
